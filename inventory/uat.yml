@@ -1,0 +1,28 @@
+nfs:
+  hosts:
+    - 172.31.85.81
+
+webserver1:
+  hosts:
+    - 172.31.83.227
+
+webserver2:
+  hosts:
+    - 172.31.86.21
+
+webserver3:
+  hosts:
+    - 172.31.86.172
+
+database:
+  hosts:
+    - 172.31.81.224
+
+loadbalancer:
+  hosts:
+    - 172.31.80.120
+
+uat-webservers:
+  hosts:
+    - 172.31.94.247
+    - 172.31.91.35
