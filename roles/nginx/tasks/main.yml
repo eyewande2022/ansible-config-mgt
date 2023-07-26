@@ -31,16 +31,16 @@
 # Vhost configuration.
 - import_tasks: vhosts.yml
 
-- name : set webservers host name in /etc/hosts
-become : yes
-blockinfile: 
+- name: set webservers host name in /etc/hosts
+  become: yes
+  blockinfile: 
     path: /etc/hosts
     block: |
       {{ item.name }} {{ item.ip }}
 
-loop:
-- { name: web1, ip: 172.31.94.247 }
-- { name: web2, ip: 172.31.91.35 }
+  loop:
+    - { name: web1, ip: 172.31.94.247 }
+    - { name: web2, ip: 172.31.91.35 }
 
 
 
