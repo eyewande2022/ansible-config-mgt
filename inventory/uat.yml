@@ -1,28 +1,9 @@
-nfs:
-  hosts:
-    - 172.31.85.81
+[webservers]
+172.31.94.247 ansible_ssh_user= 'ec2-user'
+172.31.91.35 ansible_ssh_user= 'ec2-user'
 
-webserver1:
-  hosts:
-    - 172.31.83.227
+[db]
+172.31.81.224 ansible_ssh_user= 'ubuntu'
 
-webserver2:
-  hosts:
-    - 172.31.86.21
-
-webserver3:
-  hosts:
-    - 172.31.86.172
-
-database:
-  hosts:
-    - 172.31.81.224
-
-loadbalancer:
-  hosts:
-    - 172.31.80.120
-
-uat-webservers:
-  hosts:
-    - 172.31.94.247
-    - 172.31.91.35
+[lb]
+172.31.80.120 ansible_ssh_user= 'ubuntu

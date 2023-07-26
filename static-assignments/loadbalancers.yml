@@ -1,0 +1,6 @@
+---
+- hosts: lb
+  roles:
+    - { role: /home/ubuntu/ansible-config-mgt/roles/nginx, when: enable_nginx_lb and load_balancer_is_required }
+    - { role: /home/ubuntu/ansible-config-mgt/roles/apache, when: enable_apache_lb and load_balancer_is_required }
+  become: yes

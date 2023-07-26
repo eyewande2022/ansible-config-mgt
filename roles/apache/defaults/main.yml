@@ -66,10 +66,10 @@ apache_packages_state: present
 
 # Webservers
 loadbalancer_name: "myapp1"
-web1: "172.31.94.247 weight=3"
-web2: "172.31.91.35  weight=3"
+web1: "172.31.94.247"
+web2: "172.31.91.35"
 
 
 #*****************vars for loadbalancing status***************
-enable_apache_lb: false
-load_balancer_is_required: false
+enable_apache_lb: true
+load_balancer_is_required: true
