@@ -1,0 +1,45 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Practice'){
+            steps{
+                
+                echo 'This is my first practice to get an outcome on this scripting'
+                echo 'You are the answer '
+                  echo 'To human problem'
+                   echo 'Position yourself '
+            }}
+			
+			stage('Devops Projects'){
+            steps{
+                
+                echo 'Configuration Management'
+                echo 'Monitoring Performance and Logging Management  '
+                  echo 'Tracking and Traceability'
+                   echo 'Reliability Engineering'
+            }}
+			
+            
+            stage('Change Directory'){
+            steps{
+                
+                dir('/var') {
+    // some block
+}
+            }}
+			
+			
+			
+			
+			
+			
+			
+        }
+    }
